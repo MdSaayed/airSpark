@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* reset style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* reset style end*/
+
+.container {
+    max-width: 1440px !important;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+/* create color variable */
+:root {
+    --text-primary: #0A0B0B;
+    --text-black: #010202;
+    --bg-black: #010202;
+    --button-bg-primary: #D1FC71;
+    --font-primary: 'Inter', sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+}
+
+.text-primary {
+    color: var(--text-primary);
+}
+
+.font-primary {
+    font-family: var(--font-primary);
+}
+.font-roboto {
+  font-family: var(--font-roboto);
+}
+
+.button-bg-primary {
+    background-color: var(--button-bg-primary);
+}
+
+.bg-black {
+    background-color: var(--bg-black);
+}
+
+/* Custom CSS for rotation */
+.rotate-icon {
+    transform: rotate(-45deg);
+    /* Default rotation */
+    transition: transform 0.3s ease;
+    /* Smooth transition */
+}
+
+.nav-button:hover~.rotate-icon {
+    transform: rotate(0deg);
+    /* Rotate icon to 45 degrees on hover */
+}
+
+/* button style start */
+.btn {
+    background-color: var(--button-bg-primary);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 42px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    color: var(--text-black);
+}
+
+.btn-white {
+    background-color: transparent;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 42px;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+}
+
+/* button style end */
+
+/* play button for testimonials */
+.play-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D1FC71;
+    color: #0A0B0B;
+    border-radius: 10px;
+    padding: 10px; /* Adjust padding as needed to size the button */
+}
+
+
+.video-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* responsive */
+@media (min-width: 414px) {
+    .container {
+        padding: 80px 10px;
+    }
+}
+@media (min-width: 640px) {
+    .container {
+        padding: 80px 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 80px 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 80px 50px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding: 80px 60px;
+    }
+}
