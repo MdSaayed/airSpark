@@ -10,27 +10,34 @@ document.addEventListener("DOMContentLoaded", function () {
     const playButtons = document.querySelectorAll('.play-button');
     const modal = document.getElementById('videoModal');
     const iframe = document.getElementById('videoIframe');
-    const closeBtn = document.querySelector('.close');
+    const closeModal = document.querySelector('.video-modal .close');
 
     playButtons.forEach(button => {
-        button.addEventListener('click', function (event) {
-            event.preventDefault();
-            const videoUrl = this.previousElementSibling.getAttribute('href');
-            iframe.src = videoUrl + "?autoplay=1";
-            modal.style.display = "flex"; // Ensure the modal uses flex display for centering
+        button.addEventListener('click', function () {
+            const videoUrl = button.getAttribute('data-video-url');
+            console.log("Video URL:", videoUrl); // Debugging step
+            iframe.src = videoUrl;
+            modal.classList.add('active');
+            console.log("Modal class added:", modal.classList.contains('active')); // Debugging step
         });
     });
 
-    closeBtn.addEventListener('click', function () {
-        modal.style.display = "none";
-        iframe.src = "";
+    closeModal.addEventListener('click', function () {
+        modal.classList.remove('active');
+        iframe.src = ''; // Stop the video
     });
 
+    // Close modal when clicking outside the video content
     window.addEventListener('click', function (event) {
         if (event.target === modal) {
-            modal.style.display = "none";
-            iframe.src = "";
+            modal.classList.remove('active');
+            iframe.src = ''; // Stop the video
         }
     });
 });
+
+
+
+
+
 

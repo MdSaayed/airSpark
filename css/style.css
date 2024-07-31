@@ -83,7 +83,7 @@
 
 /* button style end */
 
-/* play button for testimonials */
+/* Play button for testimonials */
 .play-button {
     top: 50%;
     left: 50%;
@@ -93,7 +93,6 @@
     border-radius: 10px;
     padding: 10px; /* Adjust padding as needed to size the button */
 }
-
 
 .video-modal {
     display: none; /* Hidden by default */
@@ -108,6 +107,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.video-modal.active {
+    display: flex;
 }
 
 .video-modal-content {
@@ -136,6 +139,48 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Media queries for responsive design */
+@media (max-width: 1024px) {
+    .video-modal-content {
+        width: 90%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 315px;
+    }
+}
+
+@media (max-width: 768px) {
+    .video-modal-content {
+        width: 95%;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-modal-content {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .close {
+        top: 5px;
+        right: 10px;
+        font-size: 25px;
+    }
+}
+
 
 
 
