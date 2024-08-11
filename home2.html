@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
     <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- theme css -->
     <link rel="stylesheet"
           href="./css/style.css">
+    <link rel="stylesheet"
+          href="./css/slider.css">
+    <link rel="stylesheet"
+          href="./css/work.css">
 </head>
 <body>
     <!-- header start -->
@@ -24,12 +33,18 @@
             <!-- Navigation Menu -->
             <nav class="hidden md:hidden lg:flex flex-grow items-center justify-center">
                 <ul class="menu flex gap-8">
+                    <li class="menu-item leading-6"><a class="index.html"
+                           href="index.html">Home1</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="home2.html">Home2</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="home3.html">Home3</a></li>
                     <li class="menu-item current-menu-item leading-6"><a class="link"
                            href="#">Services <span
                                   class="button-bg-primary px-[8px] text-[14px] font-medium ml-[4px] rounded-full ">12</span></a>
                     </li>
                     <li class="menu-item leading-6"><a class="link"
-                           href="#">Work</a></li>
+                           href="work.html">Work</a></li>
                     <li class="menu-item leading-6"><a class="link"
                            href="#">About</a></li>
                     <li class="menu-item leading-6"><a class="link"
@@ -66,7 +81,7 @@
                 <a href="#"
                    class="block py-2 hover:text-gray-400">Home1</a>
                 <a href="home2.html"
-                   class="block py-2 hover:text-gray-400">Home1</a>
+                   class="block py-2 hover:text-gray-400">Home2</a>
                 <a href="#"
                    class="block py-2 hover:text-gray-400">About</a>
                 <a href="#"
@@ -78,38 +93,37 @@
     </header>
     <!-- header end -->
     <!-- banner start -->
-    <section id="banner">
+    <section id="banner"
+             class="relative">
         <div
-             class="container py-0 bg-[url('./asset/image/banner/banner2.png')] h-[720px] flex justify-center items-end bg-no-repeat bg-cover">
-            <div class="banner-content">
-                <div class="banner-text">
-                    <div class="banner-heading flex flex-col justify-end items-center relative">
-                        <h1 class="text-6xl font-medium text-center block">
-                            <span class="bg-white py-4 px-4 text-center inline-block rounded-[24px]">A web design
-                                and</span>
+             class="container  py-0 bg-[url('./asset/image/banner/banner2.png')] h-[720px] flex justify-center items-end bg-no-repeat bg-cover">
+            <div class="banner-content absolute z-20 -bottom-20 w-full flex justify-center items-center">
+                <div class="banner-text text-center">
+                    <div class="banner-heading flex flex-col justify-end items-center">
+                        <h1 class="text-6xl font-medium block">
+                            <span class="bg-white py-4 px-4 inline-block rounded-[24px]">A web design and</span>
                             <br>
-                            <span class="bg-white py-4 px-4 text-center inline-block rounded-[24px]">branding
-                                agency</span>
+                            <span class="bg-white py-4 px-4 inline-block rounded-[24px]">branding agency</span>
                             <br>
-                            <span class="bg-white py-4 px-4 text-center inline-block rounded-[24px]">in WordPress</span>
+                            <span class="bg-white py-4 px-4 inline-block rounded-[24px]">in WordPress</span>
                         </h1>
-                        <!-- buttons -->
-                        <div class="banner-btn p-4 pt-0 flex gap-4 absolute -bottom-[5rem]">
-                            <div class="flex font-primary text-base">
-                                <button class="nav-button btn">About AirSpark</button>
-                                <i
-                                   class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
-                            </div>
-                            <div class="flex font-primary text-base">
-                                <button class="nav-button btn-white">Meet the team</button>
-                                <i
-                                   class="fas fa-arrow-right h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
-                            </div>
+                    </div>
+                    <!-- buttons -->
+                    <div class="banner-btn mt-8 pt-0 flex gap-4 justify-center">
+                        <div class="flex font-primary text-base">
+                            <button class="nav-button btn">About AirSpark</button>
+                            <i
+                               class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+                        </div>
+                        <div class="flex font-primary text-base">
+                            <button class="nav-button btn-white">Meet the team</button>
+                            <i
+                               class="fas fa-arrow-right h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div> <!-- Closing tag for banner-content -->
+        </div> <!-- Closing tag for container -->
     </section>
     <!-- banner end -->
     <!-- brands start -->
@@ -157,26 +171,28 @@
                         </li>
                     </ul>
                     <div class="img-box mt-2">
-                        <img class="w-full rounded-2xl" src="./asset/image/about/about-section.jpg"
+                        <img class="w-full rounded-2xl"
+                             src="./asset/image/about/about-section.jpg"
                              alt="">
                     </div>
                 </div>
                 <div class="about-content">
                     <h2 class="font-medium text-3xl leading-relaxed text-white">An independent web design and branding
                         agency established in 2010, focused on building relationships, leveraging industry experience,
-                        and earning awards. <!-- buttons -->
-                        <div class="banner-btn py-4 flex gap-4 inline-flex mt-4">
-                            <div class=" flex font-primary text-base">
-                                <button class="nav-button btn">About AirSpark</button>
-                                <i
-                                   class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon text-black"></i>
-                            </div>
-                            <div class="flex font-primary text-base ">
-                                <button class="nav-button text-white btn-white">Meet the team</button>
-                                <i
-                                   class="fas fa-arrow-right h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon text-white"></i>
-                            </div>
+                        and earning awards. </h2>
+                    <!-- buttons -->
+                    <div class="banner-btn py-4 flex gap-4 inline-flex mt-4">
+                        <div class=" flex font-primary text-base">
+                            <button class="nav-button btn">About AirSpark</button>
+                            <i
+                               class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon text-black"></i>
                         </div>
+                        <div class="flex font-primary text-base ">
+                            <button class="nav-button text-white btn-white">Meet the team</button>
+                            <i
+                               class="fas fa-arrow-right h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon text-white"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,7 +258,7 @@
                     </div>
                 </div>
                 <div class="col-2">
-                    <div class="section-heading lg:px-12 mb-20 text-white">
+                    <div class="section-heading-area lg:px-12 mb-20 text-white">
                         <ul class="list list-disc ml-4">
                             <li>
                                 <span class="font-medium text-primary text-white">Our Work</span>
@@ -299,10 +315,10 @@
         <div class="container">
             <div class="experience-content">
                 <div
-                     class="section-heading flex justify-between items-start md:items-center lg:items-center flex-col md:flex-row lg:flex-row">
+                     class="section-heading-area flex justify-between items-start md:items-center lg:items-center flex-col md:flex-row lg:flex-row gap-6">
                     <ul class="list list-disc ml-4">
                         <li>
-                            <span class="font-medium">Who are we?</span>
+                            <span class="font-medium">We experience</span>
                         </li>
                     </ul>
                     <div class="flex flex-wrap gap-2 md:gap-6">
@@ -385,11 +401,11 @@
     <!-- testimonials start -->
     <section id="testimonials">
         <div class="container">
-            <div class="section-heading flex flex-col md:flex-row justify-between items-center">
+            <div class="section-heading-area flex flex-col md:flex-row justify-between items-center">
                 <div>
                     <ul class="list list-disc ml-4 mb-4">
                         <li>
-                            <span class="font-medium">Who are we?</span>
+                            <span class="font-medium">Client Testimonials & Reviews</span>
                         </li>
                     </ul>
                     <h2 class="text-black text-5xl font-normal leading-[62px]"> What our happy clients <br> say about us
@@ -406,7 +422,7 @@
             </div>
             <div class="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-12">
                 <!-- Testimonial 1 -->
-                <div class="testimonial bg-white rounded-lg">
+                <div class="testimonial bg-white  rounded-3xl  overflow-hidden">
                     <div class="relative mb-4">
                         <div class="img-box aspect-w-16 aspect-h-9 relative">
                             <img class="w-full max-h-[405px] cursor-auto"
@@ -426,11 +442,11 @@
                             </div>
                         </div>
                     </div>
-                    <p class="font-medium text-lg mr-4">AirSpark transformed our website and boosted our online presence
+                    <p class="font-medium text-lg mr-8">AirSpark transformed our website and boosted our online presence
                         significantly.</p>
                 </div>
                 <!-- Testimonial 2 -->
-                <div class="testimonial bg-white rounded-lg">
+                <div class="testimonial bg-white  rounded-3xl  overflow-hidden">
                     <div class="relative mb-4">
                         <div class="img-box aspect-w-16 aspect-h-9 relative">
                             <img class="w-full max-h-[405px] cursor-auto"
@@ -445,16 +461,16 @@
                                  alt="Devon Lane"
                                  class="w-12 h-12 rounded-lg mr-4">
                             <div>
-                                <p class="text-black font-semibold text-lg font-semibold">Devon Lane</p>
-                                <p class="text-[#999A9A] font-roboto">Marketing Coordinator</p>
+                                <p class="text-black font-semibold text-lg font-semibold">Ralph Edwards</p>
+                                <p class="text-[#999A9A] font-roboto">Medical Assistant</p>
                             </div>
                         </div>
                     </div>
-                    <p class="font-medium text-lg mr-4">AirSpark transformed our website and boosted our online presence
-                        significantly.</p>
+                    <p class="font-medium text-lg mr-8">Fantastic service and exceptional web design from the AirSpark
+                        team!</p>
                 </div>
                 <!-- Testimonial 3 -->
-                <div class="testimonial bg-white rounded-lg">
+                <div class="testimonial bg-white  rounded-3xl  overflow-hidden">
                     <div class="relative mb-4">
                         <div class="img-box aspect-w-16 aspect-h-9 relative">
                             <img class="w-full max-h-[405px] cursor-auto"
@@ -469,13 +485,13 @@
                                  alt="Devon Lane"
                                  class="w-12 h-12 rounded-lg mr-4">
                             <div>
-                                <p class="text-black font-semibold text-lg font-semibold">Devon Lane</p>
-                                <p class="text-[#999A9A] font-roboto">Marketing Coordinator</p>
+                                <p class="text-black font-semibold text-lg font-semibold">Guy Hawkins</p>
+                                <p class="text-[#999A9A] font-roboto">President of Sales</p>
                             </div>
                         </div>
                     </div>
-                    <p class="font-medium text-lg mr-4">AirSpark transformed our website and boosted our online presence
-                        significantly.</p>
+                    <p class="font-medium text-lg mr-8">Our eCommerce sales have skyrocketed thanks to AirSpark's
+                        expertise.</p>
                 </div>
             </div>
             <!-- Video Modal -->
@@ -497,6 +513,179 @@
         </div>
     </section>
     <!-- testimonials end -->
+    <!-- story section start -->
+    <section id="our-story"
+             class="py-28">
+        <div class="container">
+            <div class="section-heading-area">
+                <ul class="list list-disc ml-4 mb-4">
+                    <li>
+                        <span class="font-medium">Sharing the love</span>
+                    </li>
+                </ul>
+                <h2 class="text-black text-5xl font-normal leading-[62px]">A web-flow design agency dedicated to your
+                    brand, regardless of size or industry.</h2>
+            </div>
+            <div class="flex flex-col lg:flex-row items-stretch gap-12 md:gap-12 lg:gap-8 pt-20 relative">
+                <!-- Left Column: Image with Overlay -->
+                <div class="relative lg:w-1/2 flex-shrink-0">
+                    <img class="w-full rounded-lg"
+                         src="./asset/image/our story/story1.png"
+                         alt="Office">
+                    <div
+                         class="absolute bottom-5 left-5 button-bg-primary text-black p-4 md:p-6 lg:p-6 rounded-lg z-30">
+                        <h3 class="text-black text-4xl font-normal leading-[62px]">Our Studio</h3>
+                        <div class="flex gap-4 md:gap-6 items-end mt-4">
+                            <div>
+                                <p>Studio Address</p>
+                                <div class="flex items-start gap-4 mt-4">
+                                    <img src="/asset/icons/location.svg"
+                                         alt="">
+                                    <span class="text-lg font-normal leading-[28px]">4517<br> Washington
+                                        Ave.<br>Manchester,<br> Kentucky 39495</span>
+                                </div>
+                            </div>
+                            <!-- button -->
+                            <div class="banner-btn flex gap-4 inline-flex">
+                                <div class="flex font-primary text-base">
+                                    <button class="nav-button btn bg-black text-white">Get directions</button>
+                                    <i
+                                       class="fas fa-arrow-right bg-black text-white h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="white-bg bg-white w-[180px] h-[100px] rounded-xl absolute -left-8 -top-6 z-20">
+                    </div>
+                    <div class="white-bg bg-white w-[180px] h-[100px] rounded-xl absolute -right-8 -bottom-6 z-20">
+                    </div>
+                </div>
+                <!-- Right Column: Text Content -->
+                <div class="lg:w-1/2 flex flex-col justify-between">
+                    <div class="flex-grow">
+                        <p class="text-lg mb-4">Founded in 2010, AirSpark is an award-winning web design agency based in
+                            Manchester, specialising in web design, branding, eCommerce, digital marketing, and organic
+                            SEO. </p>
+                        <p class="text-lg mb-4">We prefer Craft CMS over WordPress, allowing you to easily manage your
+                            website pages, content, and SEO. We are proud to be a verified Craft CMS and Craft Commerce
+                            professional partner.</p>
+                        <p class="text-lg mb-8">If you're looking for a professional Manchester web design agency to
+                            support your branding or website design needs, get in touch with us today.</p>
+                    </div>
+                    <!-- buttons -->
+                    <div class="banner-btn flex gap-4 inline-flex">
+                        <div class="flex font-primary text-base">
+                            <button class="nav-button btn">About Us</button>
+                            <i
+                               class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- story section emd -->
+    <!-- blog start  -->
+    <section id="blog">
+        <div class="container">
+            <div class="blog-area grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="section-heading-area py-16">
+                    <div>
+                        <ul class="list list-disc ml-4">
+                            <li>
+                                <span class="font-medium text-primary">Blog</span>
+                            </li>
+                        </ul>
+                        <h2 class="text-black text-5xl font-normal mt-6 leading-[62px]">The latest from our</br> design
+                            studio</h2>
+                    </div>
+                    <!-- button -->
+                    <div class="banner-btn py-4 flex gap-4 inline-flex mt-4">
+                        <div class=" flex font-primary text-base">
+                            <button class="nav-button btn">View the blog</button>
+                            <i
+                               class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon text-black"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-cards grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-y-16 md:gap-x-6">
+                    <div class="card">
+                        <div class="img-box rounded-3xl">
+                            <img class="w-full"
+                                 src="./asset/image/blog/blog1.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content mt-4">
+                            <div class="flex gap-4 text-primary">
+                                <ul class="list list-disc  ml-4">
+                                    <li class="text-black">6 min read</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="text-black text-2xl font-medium mt-2">Transform Your Brand: Why Web Design
+                                    Matters More Than Ever</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-box rounded-3xl">
+                            <img class="w-full"
+                                 src="./asset/image/blog/blog2.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content mt-4">
+                            <div class="flex gap-4 text-primary">
+                                <ul class="list list-disc ml-4">
+                                    <li class="text-black">6 min read</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="text-black text-2xl font-medium mt-2">The Future of Web Design: Trends to
+                                    Watch in 2024</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-box rounded-3xl">
+                            <img class="w-full"
+                                 src="./asset/image/blog/blog3.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content mt-4">
+                            <div class="flex gap-4 text-primary">
+                                <ul class="list list-disc ml-4">
+                                    <li class="text-black">6 min read</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="text-black text-2xl font-medium mt-2">Transform Your Brand: Why Web Design
+                                    Matters More Than Ever</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-box rounded-3xl">
+                            <img class="w-full"
+                                 src="./asset/image/blog/blog4.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content mt-4">
+                            <div class="flex gap-4 text-primary">
+                                <ul class="list list-disc ml-4">
+                                    <li class="text-black">6 min read</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="text-black text-2xl font-medium mt-2">The Future of Web Design: Trends to
+                                    Watch in 2024</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog end -->
     <!-- footer start -->
     <footer id="footer"
             class="bg-[#010202]">
@@ -608,11 +797,13 @@
         </div>
     </footer>
     <!-- footer end -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
             integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
             crossorigin="anonymous"
             referrerpolicy="no-referrer"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
 </body>
 </html>

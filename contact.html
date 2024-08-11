@@ -34,9 +34,11 @@
             <nav class="hidden md:hidden lg:flex flex-grow items-center justify-center">
                 <ul class="menu flex gap-8">
                     <li class="menu-item leading-6"><a class="index.html"
-                           href="home2.html">Home1</a></li>
+                           href="index.html">Home1</a></li>
                     <li class="menu-item leading-6"><a class="link"
                            href="home2.html">Home2</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="home3.html">Home3</a></li>
                     <li class="menu-item current-menu-item leading-6"><a class="link"
                            href="#">Services <span
                                   class="button-bg-primary px-[8px] text-[14px] font-medium ml-[4px] rounded-full ">12</span></a>
@@ -90,221 +92,92 @@
         </div>
     </header>
     <!-- header end -->
-    <!-- banner start -->
-    <section id="banner">
-        <div class="container pt-8">
-            <div
-                 class="banner-content relative bg-[url('./asset/image/banner/banner1.png')] h-[720px] bg-no-repeat bg-cover rounded-lg">
-                <div
-                     class="banner-text absolute left-5 top-1/2 transform -translate-y-1/2 md:left-12 lg:left-14 lg:-top-6 mr-12 lg:transform-none lg:-translate-y-0">
-                    <div class="banner-heading text-left">
-                        <h1 class="text-6xl font-medium">
-                            <span class="bg-white inline-block py-0 md:py-2 px-4 rounded-r-[24px] leading-snug">A web
-                                design</span></br>
-                            <span class="bg-white inline-block py-0 md:py-2 px-4 rounded-r-[24px] leading-snug">and
-                                branding agency</span></br>
-                            <span
-                                  class="bg-white inline-block py-0 pb-2 lg:pb-0 md:py-2 px-4 rounded-r-[24px] leading-snug">in
-                                Wordpress</span>
-                        </h1>
+    <div id="contact">
+        <div class="container">
+            <div class="section-heading-area pb-28">
+                <ul class="list list-disc ml-4 flex">
+                    <li class="">
+                        <span class="flex flex-col md:flex-row  gap-4 items-start md:items-center">
+                            <span class="font-medium text-primary mr-4">Contact </span>
+                            <span class="text-black text-8xl font-normal leading-snug -ml-[15px] block">It's nice
+                                to</span>
+                        </span>
+                        <span class="flex gap-10 items-center">
+                            <span class="text-black text-8xl font-normal leading-snug -ml-[15px] block">meet ya</span>
+                            <i
+                               class="fas fa-arrow-right button-bg-primary h-[80px] w-[80px] flex justify-center items-center -ml-3 rounded-full rotate-45 text-3xl"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-area flex flex-col md:flex-row gap-10 justify-between custom-padding px-0">
+                <div class="flex flex-col gap-12 md:5/12">
+                    <div class="disc">
+                        <p class="text-lg text-black">We are a digital marketing agency with<br> expertise, and we’re on
+                            a mission to help <br>you take the next step in your business.</p>
                     </div>
-                    <!-- buttons -->
-                    <div
-                         class="banner-btn p-4 bg-white rounded-bl rounded-r-[24px] flex flex-col md:flex-row lg:flex-row gap-4 inline-flex">
-                        <div class="flex font-primary text-base">
-                            <button class="nav-button btn">About AirSpark</button>
+                    <!-- button -->
+                    <div class="banner-btn flex gap-4 inline-flex">
+                        <div class=" flex font-primary text-base">
+                            <button class="nav-button btn">Go to Project Planner</button>
                             <i
                                class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
                         </div>
-                        <div class="flex font-primary text-base">
-                            <button class="nav-button btn-white">Meet the team</button>
-                            <i
-                               class="fas fa-arrow-right h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
-                        </div>
                     </div>
+                    <!-- contact info -->
+                    <div class="contact-info flex gap-2 md:gap-2 lg:gap-8 flex-wrap items-center">
+                        <p class="text-[#999A9A] text-lg">Hate contact forms?</p>
+                        <a class="block text-lg underline"
+                           href="mailto:hello@airspark.com">hello@airspark.com</a>
+                    </div>
+                </div>
+                <div class="contact-form mt-12 md:mt-0 md:w-7/12">
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-4"
+                          action="submit_form.php"
+                          method="POST">
+                        <!-- Full Name -->
+                        <input type="text"
+                               name="full_name"
+                               class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-black"
+                               placeholder="Full name"
+                               required>
+                        <!-- Email Address -->
+                        <input type="email"
+                               name="email"
+                               class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-black"
+                               placeholder="Email address"
+                               required>
+                        <!-- Phone (Optional) -->
+                        <input type="tel"
+                               name="phone"
+                               class="p-4 border border-gray-300 rounded-lg md:col-span-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-black"
+                               placeholder="Phone (Optional)">
+                        <!-- Tell us about your project -->
+                        <textarea name="project_details"
+                                  class="p-4 border border-gray-300 rounded-lg md:col-span-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-black"
+                                  rows="5"
+                                  placeholder="Tell us about your project"
+                                  required></textarea>
+                        <!-- Privacy Policy and Submit Button -->
+                        <div
+                             class="md:col-span-2 flex flex-col lg:flex-row gap-6 justify-between lg:items-center flex-wrap mt-4">
+                            <p class="text-lg text-black"> By submitting this form I accept the <a href="#"
+                                   class="underline">Privacy Policy</a> of this site. </p>
+                            <!-- button -->
+                            <div class="banner-btn flex gap-4 inline-flex">
+                                <div class="flex font-primary text-base">
+                                    <button type="submit"
+                                            class="nav-button btn bg-black text-white">Send message</button>
+                                    <i
+                                       class="fas fa-arrow-right bg-black text-white h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- banner end -->
-    <!-- about start -->
-    <section id="about-us">
-        <div class="container pt-0">
-            <div class="about-content grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8">
-                <div>
-                    <ul class="list list-disc ml-4">
-                        <li>
-                            <span class="font-medium">Who are we?</span>
-                        </li>
-                    </ul>
-                    <div class="img-box mt-2">
-                        <img class="w-full rounded-2xl"
-                             src="./asset/image/about/about-section.jpg"
-                             alt="">
-                    </div>
-                </div>
-                <div class="about-content">
-                    <h2 class="font-medium text-3xl leading-relaxed">An independent web design and branding agency
-                        established in 2010, focused on building relationships, leveraging industry experience, and
-                        earning awards. <!-- buttons -->
-                        <div class="banner-btn py-4 bg-white rounded-bl rounded-r flex gap-4 inline-flex mt-6">
-                            <div class=" flex font-primary text-base">
-                                <button class="nav-button btn">About AirSpark</button>
-                                <i
-                                   class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
-                            </div>
-                            <div class="flex font-primary text-base ">
-                                <button class="nav-button btn-white">Meet the team</button>
-                                <i
-                                   class="fas fa-arrow-right h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- about ennd -->
-    <!-- brands start -->
-    <section id="brands">
-        <div class="container mx-auto">
-            <div class="brands-area grid gap-12 md:gap-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-5">
-                <div class="p-2 flex items-center">
-                    <img src="./asset/image/brand logo/brand1.png"
-                         alt="Brand 1"
-                         class="w-full md:w-[148px]">
-                </div>
-                <div class="p-2 flex items-center">
-                    <img src="./asset/image/brand logo/brand2.png"
-                         alt="Brand 2"
-                         class="w-full md:w-[148px]">
-                </div>
-                <div class="p-2 flex items-center">
-                    <img src="./asset/image/brand logo/brand3.png"
-                         alt="Brand 3"
-                         class="w-full md:w-[148px]">
-                </div>
-                <div class="p-2 flex items-center">
-                    <img src="./asset/image/brand logo/brand4.png"
-                         alt="Brand 4"
-                         class="w-full md:w-[148px]">
-                </div>
-                <div class="p-2 flex items-center">
-                    <img src="./asset/image/brand logo/brand5.png"
-                         alt="Brand 5"
-                         class="w-full md:w-[148px]">
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- brands end -->
-    <!-- portfolio start -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="portfolio-area grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-                <div class="col-1">
-                    <div class="card mt-12">
-                        <div class="img-box rounded">
-                            <img class="w-full"
-                                 src="./asset/image/portfolio/portfolio1.png"
-                                 alt="">
-                        </div>
-                        <div class="card-content mt-4">
-                            <div class="flex gap-4 text-primary">
-                                <span>2023</span>
-                                <ul class="list list-disc ml-2">
-                                    <li>Gray Matter</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online Experience
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card  mt-12">
-                        <div class="img-box rounded">
-                            <img class="w-full"
-                                 src="./asset/image/portfolio/portfolio2.png"
-                                 alt="">
-                        </div>
-                        <div class="card-content mt-4">
-                            <div class="flex gap-4 text-primary">
-                                <span>2023</span>
-                                <ul class="list list-disc ml-2">
-                                    <li>Gray Matter</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online Experience
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center flex-col gap-6 mt-12">
-                        <h2 class="text-black text-5xl font-normal text-center leading-snug mt-6">Like what</br> you
-                            see?</h2>
-                        <!-- buttons -->
-                        <div class="banner-btn p-4 bg-white rounded-bl rounded-r flex gap-4 inline-flex">
-                            <div class=" flex font-primary text-base">
-                                <button class="nav-button btn">Contact</button>
-                                <i
-                                   class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="section-heading lg:px-12 mb-20">
-                        <ul class="list list-disc ml-4">
-                            <li>
-                                <span class="font-medium text-primary">Our Work</span>
-                            </li>
-                        </ul>
-                        <h2 class="text-black text-5xl font-normal leading-snug mt-6">Take a look at our projects</h2>
-                    </div>
-                    <div class="card mt-12">
-                        <div class="img-box rounded">
-                            <img class="w-full"
-                                 src="./asset/image/portfolio/portfolio3.png"
-                                 alt="">
-                        </div>
-                        <div class="card-content mt-4">
-                            <div class="flex gap-4 text-primary">
-                                <span>2023</span>
-                                <ul class="list list-disc ml-2">
-                                    <li>Gray Matter</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online Experience
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mt-12">
-                        <div class="img-box rounded">
-                            <img class="w-full"
-                                 src="./asset/image/portfolio/portfolio4.png"
-                                 alt="">
-                        </div>
-                        <div class="card-content mt-4">
-                            <div class="flex gap-4 text-primary">
-                                <span>2023</span>
-                                <ul class="list list-disc ml-2">
-                                    <li>Gray Matter</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online Experience
-                                </h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- portfolio end -->
+    </div>
     <!-- footer start -->
     <footer id="footer"
             class="bg-[#010202]">
@@ -380,7 +253,7 @@
                 </div>
             </div>
             <div
-                 class="copyright-text flex flex-col lg:flex-row gap-4 md:gap-0 lg:gap-0 justify-between items-center mt-12">
+                 class="copyright-text flex flex-col lg:flex-row gap-4 md:gap-0 lg:gap-0 justify-between items-center mb-12">
                 <div class="logo">
                     <img src="./asset/image/logo/logo-white.png"
                          alt="">

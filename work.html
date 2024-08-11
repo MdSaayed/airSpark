@@ -1,0 +1,549 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- theme css -->
+    <link rel="stylesheet"
+          href="./css/style.css">
+    <link rel="stylesheet"
+          href="./css/slider.css">
+    <link rel="stylesheet"
+          href="./css/work.css">
+</head>
+<body>
+    <!-- header start -->
+    <header id="header-area relative"
+            class="text-primary-color">
+        <div class="container py-3 flex items-center justify-between  h-[90px]">
+            <!-- Logo -->
+            <div>
+                <a href="index.html">
+                    <img src="./asset/image/logo/Logo.png"
+                         alt="Logo">
+                </a>
+            </div>
+            <!-- Navigation Menu -->
+            <nav class="hidden md:hidden lg:flex flex-grow items-center justify-center">
+                <ul class="menu flex gap-8">
+                    <li class="menu-item leading-6"><a class="index.html"
+                           href="home2.html">Home1</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="home2.html">Home2</a></li>
+                    <li class="menu-item current-menu-item leading-6"><a class="link"
+                           href="#">Services <span
+                                  class="button-bg-primary px-[8px] text-[14px] font-medium ml-[4px] rounded-full ">12</span></a>
+                    </li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="work.html">Work</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="#">About</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="#">Blog</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hidden md:hidden lg:flex font-primary">
+                <button class="nav-button button-bg-primary px-4 h-[42px] rounded-full flex items-center"> Start a
+                    project </button>
+                <i
+                   class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button"
+                    class="lg:hidden px-2 py-1 border border-gray-600 rounded">
+                <svg class="w-6 h-6"
+                     fill="none"
+                     stroke="currentColor"
+                     viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+             class=" container mx-auto py-2 absolute left-0 w-full bg-gray-800 text-white hidden z-20 ">
+            <div class="">
+                <a href="#"
+                   class="block py-2 hover:text-gray-400">Home1</a>
+                <a href="home2.html"
+                   class="block py-2 hover:text-gray-400">Home2</a>
+                <a href="#"
+                   class="block py-2 hover:text-gray-400">About</a>
+                <a href="#"
+                   class="block py-2 hover:text-gray-400">Services</a>
+                <a href="#"
+                   class="block py-2 hover:text-gray-400">Contact</a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- portfolio start -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="experience-content">
+                <div
+                     class="section-heading-area flex justify-between items-start md:items-center lg:items-center flex-col md:flex-row lg:flex-row gap-12">
+                    <ul class="list list-disc ml-4">
+                        <li>
+                            <span class="font-medium text-nowrap">Our Work</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 md:gap-6">
+                        <div class="flex items-center gap-4">
+                            <span class="text-black text-5xl font-normal text-center leading-snug">explore all</span>
+                            <span class="text-black">12</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-[#999A9A]">
+                            <span class="text-5xl font-normal text-center leading-snug">fashion</span>
+                            <span>04</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-[#999A9A]">
+                            <span class="text-5xl font-normal text-center leading-snug">agency</span>
+                            <span>06</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-[#999A9A]">
+                            <span class="text-5xl font-normal text-center leading-snug">bcb</span>
+                            <span>08</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-[#999A9A]">
+                            <span class="text-5xl font-normal text-center leading-snug">b2c</span>
+                            <span>09</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-[#999A9A]">
+                            <span class="text-5xl font-normal text-center leading-snug">archive</span>
+                            <span>09</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-[#999A9A]">
+                            <span class="text-5xl font-normal text-center leading-snug">property</span>
+                            <span>09</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-[#999A9A]">
+                            <span class="text-5xl font-normal text-center leading-snug">health</span>
+                            <span>09</span>
+                        </div>
+                        <div class="flex items-center gap-4 text-[#999A9A]">
+                            <span class="text-5xl font-normal text-center leading-snug">corporate</span>
+                            <span>09</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-area grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-28">
+                    <div class="col-1">
+                        <div class="card mb-12">
+                            <div class="img-box rounded">
+                                <img class="w-full"
+                                     src="./asset/image/portfolio/portfolio1.png"
+                                     alt="">
+                            </div>
+                            <div class="card-content mt-4">
+                                <div class="flex gap-4 text-primary">
+                                    <span>2023</span>
+                                    <ul class="list list-disc ml-2">
+                                        <li>Gray Matter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online
+                                        Experience </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  mb-12">
+                            <div class="img-box rounded">
+                                <img class="w-full"
+                                     src="./asset/image/portfolio/portfolio2.png"
+                                     alt="">
+                            </div>
+                            <div class="card-content mt-4">
+                                <div class="flex gap-4 text-primary">
+                                    <span>2023</span>
+                                    <ul class="list list-disc ml-2">
+                                        <li>Gray Matter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online
+                                        Experience </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center flex-col gap-4 mb-24">
+                            <div class="flex flex-col gap-4 items-center">
+                                <h2 class="text-black text-5xl font-normal text-center leading-snug mt-6">You're still
+                                    here?!</h2>
+                                <p class="text-base font-normal">You must really like us...</p>
+                            </div>
+                            <!-- buttons -->
+                            <div class="banner-btn p-4 bg-white rounded-bl rounded-r flex gap-4 inline-flex">
+                                <div class=" flex font-primary text-base">
+                                    <button class="nav-button btn">Contact us</button>
+                                    <i
+                                       class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  mb-12">
+                            <div class="img-box rounded">
+                                <img class="w-full"
+                                     src="./asset/image/portfolio/portfolio8.png"
+                                     alt="">
+                            </div>
+                            <div class="card-content mt-4">
+                                <div class="flex gap-4 text-primary">
+                                    <span>2023</span>
+                                    <ul class="list list-disc ml-2">
+                                        <li>Gray Matter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online
+                                        Experience </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  mb-12">
+                            <div class="img-box rounded">
+                                <img class="w-full"
+                                     src="./asset/image/portfolio/portfolio7.png"
+                                     alt="">
+                            </div>
+                            <div class="card-content mt-4">
+                                <div class="flex gap-4 text-primary">
+                                    <span>2023</span>
+                                    <ul class="list list-disc ml-2">
+                                        <li>Gray Matter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online
+                                        Experience </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card  mb-12">
+                            <div class="img-box rounded">
+                                <img class="w-full"
+                                     src="./asset/image/portfolio/portfolio11.png"
+                                     alt="">
+                            </div>
+                            <div class="card-content mt-4">
+                                <div class="flex gap-4 text-primary">
+                                    <span>2023</span>
+                                    <ul class="list list-disc ml-2">
+                                        <li>Gray Matter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online
+                                        Experience </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="testimonial flex justify-center">
+                            <div class="card flex flex-col gap-6 px-4 pb-4 md:px-16 md:pb-16 lg:px-28 lg:pb-28">
+                                <h2 class="text-black font-medium text-2xl">Shape understands the client's concept &
+                                    turns ideas into a reality</h2>
+                                <div class="flex gap-4">
+                                    <div class="img-box">
+                                        <img src="./asset/image/testimonials/client1.png"
+                                             alt="">
+                                    </div>
+                                    <div>
+                                        <h3 class="font-semibold text-lg">Adison Dokidis</h3>
+                                        <p class="text-lg text-[#999A9A]">Web Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-12">
+                            <div class="img-box rounded">
+                                <img class="w-full"
+                                     src="./asset/image/portfolio/portfolio3.png"
+                                     alt="">
+                            </div>
+                            <div class="card-content mt-4">
+                                <div class="flex gap-4 text-primary">
+                                    <span>2023</span>
+                                    <ul class="list list-disc ml-2">
+                                        <li>Gray Matter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online
+                                        Experience </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-12">
+                            <div class="img-box rounded">
+                                <img class="w-full"
+                                     src="./asset/image/portfolio/portfolio5.png"
+                                     alt="">
+                            </div>
+                            <div class="card-content mt-4">
+                                <div class="flex gap-4 text-primary">
+                                    <span>2023</span>
+                                    <ul class="list list-disc ml-2">
+                                        <li>Gray Matter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online
+                                        Experience </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-12">
+                            <div class="img-box rounded">
+                                <img class="w-full"
+                                     src="./asset/image/portfolio/portfolio9.png"
+                                     alt="">
+                            </div>
+                            <div class="card-content mt-4">
+                                <div class="flex gap-4 text-primary">
+                                    <span>2023</span>
+                                    <ul class="list list-disc ml-2">
+                                        <li>Gray Matter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online
+                                        Experience </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-12">
+                            <div class="img-box rounded">
+                                <img class="w-full"
+                                     src="./asset/image/portfolio/portfolio10.png"
+                                     alt="">
+                            </div>
+                            <div class="card-content mt-4">
+                                <div class="flex gap-4 text-primary">
+                                    <span>2023</span>
+                                    <ul class="list list-disc ml-2">
+                                        <li>Gray Matter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online
+                                        Experience </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-12">
+                            <div class="img-box rounded">
+                                <img class="w-full"
+                                     src="./asset/image/portfolio/portfolio6.png"
+                                     alt="">
+                            </div>
+                            <div class="card-content mt-4">
+                                <div class="flex gap-4 text-primary">
+                                    <span>2023</span>
+                                    <ul class="list list-disc ml-2">
+                                        <li>Gray Matter</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2 class="text-black text-3xl font-medium mt-2">Revamping TechCo's Online
+                                        Experience </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio end -->
+    <!-- featured-projects start -->
+    <section id="featured-projects"
+             class="relative py-20">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 place-content-between gap-32 mt-6 md:mt-0 mb-10">
+                <div class="relative  flex justify-start">
+                    <img class="rounded-lg  w-48 -top-12 absolute h-36 object-cover"
+                         src="./asset/image/featured project/featured1.png"
+                         alt="Project 2">
+                    <img class="rounded-lg z-20 ml-16 w-56 lg:w-80 object-cover"
+                         src="./asset/image/featured project/featured2.png"
+                         alt="Project 1">
+                </div>
+                <div class="relative flex justify-end">
+                    <img class="rounded-lg  w-48 -top-12 absolute h-36 object-cover"
+                         src="./asset/image/featured project/featured5.png"
+                         alt="Project 4">
+                    <img class="rounded-lg z-20 mr-16 w-56 lg:w-80 object-cover"
+                         src="./asset/image/featured project/featured4.png"
+                         alt="Project 3">
+                </div>
+            </div>
+            <div class="section-heading-area text-center py-28">
+                <h2 class="text-black text-5xl font-medium leading-[62px]">Sexy stuff we’re</br> working on right now</h2>
+                <p class="text-lg text-black my-4">Shh... sneak peek, don’t tell anyone</p>
+                <!-- button -->
+                <div class="banner-btn p-4 bg-white rounded-bl rounded-r flex gap-4 inline-flex mt-6">
+                    <div class=" flex font-primary text-base">
+                        <button class="nav-button btn">Start a project</button>
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 place-content-between gap-32 mt-24">
+                <div class="relative  flex justify-start">
+                    <img class="rounded-lg w-48 -top-12 absolute h-36 object-cover"
+                         src="./asset/image/featured project/featured5.png"
+                         alt="Project 2">
+                    <img class="rounded-lg z-20 ml-16 w-56 lg:w-80  object-cover"
+                         src="./asset/image/featured project/featured6.png"
+                         alt="Project 1">
+                </div>
+                <div class="relative flex justify-end">
+                    <img class="rounded-lg w-48 -top-12 right-0 absolute h-36 object-cover"
+                         src="./asset/image/featured project/featured7.png"
+                         alt="Project 4">
+                    <img class="rounded-lg z-20 mr-16 w-56 lg:w-80  object-cover"
+                         src="./asset/image/featured project/featured8.png"
+                         alt="Project 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featured-projects end -->
+    <!-- footer start -->
+    <footer id="footer"
+            class="bg-[#010202]">
+        <div class="container pb-8 relative">
+            <div class="footer-links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="col-1">
+                    <h3 class="text-[#999A9A] leading-6 mb-4">Index</h3>
+                    <ul>
+                        <li class="text-white text-base mb-3"><a href="">Home V1</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Home V2</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Home V3</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Work</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Work Single (CMS)</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Start a project</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3 class="text-[#999A9A] leading-6 mb-4">Services</h3>
+                    <ul>
+                        <li class="text-white text-base mb-3"><a href="">Services V1</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Services V2</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Services V3</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Services Single (CMS)</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3 class="text-[#999A9A] leading-6 mb-4">Blog</h3>
+                    <ul>
+                        <li class="text-white text-base mb-3"><a href="">Blog V1</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Blog V2</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Blog V3</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Blog Single (CMS)</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3 class="text-[#999A9A] leading-6 mb-4">About</h3>
+                    <ul>
+                        <li class="text-white text-base mb-3"><a href="">About us</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Meet the team</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Culture</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Testimonials</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Careers</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Careers Single (CMS)</a></li>
+                    </ul>
+                </div>
+                <div class="col-5">
+                    <h3 class="text-[#999A9A] leading-6 mb-4">Utility</h3>
+                    <ul>
+                        <li class="text-white text-base mb-3"><a href="">Start here</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Password protection</a></li>
+                        <li class="text-white text-base mb-3"><a href="">404 not found</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Licences</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Privacy Policy</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Terms of Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row md:justify-between pt-16">
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-white text-4xl font-normal leading-snug">Do you like</br> what you see?</h2>
+                    <!-- buttons -->
+                    <div class="banner-btn py-4 flex gap-4 inline-flex">
+                        <div class=" flex font-primary text-base">
+                            <button class="nav-button btn">Start a project</button>
+                            <i
+                               class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-6xl md:text-6xl	lg:text-8xl text-white leading-snug font-medium text-end">Crafting
+                        </br> since 2012</h3>
+                </div>
+            </div>
+            <div
+                 class="copyright-text flex flex-col lg:flex-row gap-4 md:gap-0 lg:gap-0 justify-between items-center mb-12">
+                <div class="logo">
+                    <img src="./asset/image/logo/logo-white.png"
+                         alt="">
+                </div>
+                <div>
+                    <p class="text-[#999A9A] text-[14px] text-center">© 2024 Created by Airdokan & Powerd by Webflow.
+                        All rights reserved. </p>
+                </div>
+            </div>
+            <!-- social links -->
+            <div class="social-links flex flex-col gap-2 bg-white rounded-l-lg p-4 absolute -top-4 -right-[1px]">
+                <div class="button-bg-primary rounded-full p-1 w-[40px] h-[40px] flex justify-center items-center">
+                    <i class="fa-brands fa-facebook text-[18px]"></i>
+                </div>
+                <div class="button-bg-primary rounded-full p-1 w-[40px] h-[40px] flex justify-center items-center">
+                    <i class="fa-brands fa-linkedin text-[18px]"></i>
+                </div>
+                <div class="button-bg-primary rounded-full p-1 w-[40px] h-[40px] flex justify-center items-center">
+                    <i class="fa-brands fa-twitter text-[18px]"></i>
+                </div>
+                <div class="button-bg-primary rounded-full p-1 w-[40px] h-[40px] flex justify-center items-center">
+                    <i class="fa-brands fa-github text-[18px]"></i>
+                </div>
+                <div class="button-bg-primary rounded-full p-1 w-[40px] h-[40px] flex justify-center items-center">
+                    <i class="fa-brands fa-behance text-[18px]"></i>
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 bg-white rounded-br-lg p-4 absolute -top-4 left-0">
+                <div">
+                    <p class="text-lg font-semibold	">Take me up again 👆</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+</html>

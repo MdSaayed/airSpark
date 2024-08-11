@@ -1,0 +1,5 @@
+.custom-bulet li:not(:first-child)::before {
+        content: "•";  
+        margin: 0 1.3rem;  
+        color: black;  
+    }
