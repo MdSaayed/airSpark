@@ -147,6 +147,7 @@
     cursor: pointer;
 }
 
+
 /* Media queries for responsive design */
 @media (max-width: 1024px) {
     .video-modal-content {
@@ -260,13 +261,11 @@
 
 
 @media (max-width: 394px) {
-
     .btn,
     .btn-white {
-        font-size: 0.75rem;
-        /* 12px font size */
-        padding-left: 9px;
-        padding-right: 9px;
+        font-size: 12px;
+        padding-left: 25px;
+        padding-right: 25px;
         word-wrap: none;
     }
 }

@@ -51,3 +51,25 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+// faq
+document.querySelectorAll('.faq-question').forEach(item => {
+    item.addEventListener('click', event => {
+        const faqItem = item.parentElement;
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = item.querySelector('.faq-toggle-icon i');
+        icon.style.transition = 'transform 300ms ease-in-out';
+
+        // Toggle the answer visibility
+        if (answer.classList.contains('max-h-0')) {
+            answer.classList.remove('max-h-0');
+            answer.classList.add('max-h-screen'); // Adjust as necessary
+            icon.style.transform = 'rotate(135deg)';
+        } else {
+            answer.classList.remove('max-h-screen');
+            answer.classList.add('max-h-0');
+            icon.style.transform = 'rotate(0deg)';
+        }
+    });
+});
