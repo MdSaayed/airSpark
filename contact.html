@@ -50,7 +50,7 @@
                     <li class="menu-item leading-6"><a class="link"
                            href="#">Blog</a></li>
                     <li class="menu-item leading-6"><a class="link"
-                           href="#">Contact</a></li>
+                           href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="hidden md:hidden lg:flex font-primary">
@@ -86,7 +86,7 @@
                    class="block py-2 hover:text-gray-400">About</a>
                 <a href="#"
                    class="block py-2 hover:text-gray-400">Services</a>
-                <a href="#"
+                <a href="contact.html"
                    class="block py-2 hover:text-gray-400">Contact</a>
             </div>
         </div>
@@ -100,13 +100,15 @@
                     <li class="">
                         <span class="flex flex-col md:flex-row  gap-4 items-start md:items-center">
                             <span class="font-medium text-primary mr-4">Contact </span>
-                            <span class="text-black text-8xl font-normal leading-none -ml-[15px] block">It's nice
+                            <span class="text-black text-7xl lg:text-8xl font-normal leading-[1.3] lg:leading-[1.5] -ml-[15px] block">It's nice
                                 to</span>
                         </span>
-                        <span class="flex gap-10 items-center">
-                            <span class="text-black text-8xl font-normal leading-none -ml-[15px] block">meet ya</span>
-                            <i
-                               class="fas fa-arrow-right button-bg-primary h-[80px] w-[80px] flex justify-center items-center -ml-3 rounded-full rotate-45 text-3xl"></i>
+                        <span class="flex gap-4 md:gap-10 items-center">
+                            <span class="text-black text-7xl lg:text-8xl font-normal leading-[1.3] lg:leading-[1.5] -ml-[15px] block mr-2">meet ya</span>
+                            <div>
+                                <i
+                                   class="fas fa-arrow-right button-bg-primary h-[80px] md:h-[100px] w-[80px] md:w-[100px] flex justify-center items-center -ml-3 rounded-full rotate-45 text-3xl"></i>
+                            </div>
                         </span>
                     </li>
                 </ul>
@@ -265,12 +267,14 @@
                     <!-- FAQ Item 1 -->
                     <div class="faq-item bg-[#F3F3F3] w-full rounded-lg p-4">
                         <button
-                                class="faq-question text-black flex justify-between items-center w-full py-2 text-left text-lg font-semibold">
+                                class="faq-question text-black flex justify-between items-start w-full py-2 text-left text-lg font-semibold gap-4">
                             <span>What services does AirSpark offer?</span>
-                            <span
-                                  class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
-                                <i class="fas fa-arrow-right text-base text-white"></i>
-                            </span>
+                            <div>
+                                <span
+                                      class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
                         </button>
                         <div
                              class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
@@ -281,92 +285,104 @@
                     <!-- FAQ Item 2 -->
                     <div class="faq-item bg-[#F3F3F3] w-full rounded-lg p-4">
                         <button
-                                class="faq-question text-black flex justify-between items-center w-full py-2 text-left text-lg font-semibold">
-                            <span>How does AirSpark handle project deadlines?</span>
-                            <span
-                                  class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
-                                <i class="fas fa-arrow-right text-base text-white"></i>
-                            </span>
+                                class="faq-question text-black flex justify-between items-start w-full py-2 text-left text-lg font-semibold gap-2 md:gap-4">
+                            <span>How long does it take to complete a web design project?</span>
+                            <div>
+                                <span
+                                      class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
                         </button>
                         <div
                              class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                            We manage project deadlines through meticulous planning, regular progress updates, and clear
-                            communication with our clients to ensure timely delivery. </div>
+                            The timeline for a web design project varies based on its complexity and requirements.
+                            Typically, a standard website takes 4-6 weeks from initial consultation to launch. </div>
                     </div>
                     <!-- FAQ Item 3 -->
                     <div class="faq-item bg-[#F3F3F3] w-full rounded-lg p-4">
                         <button
-                                class="faq-question text-black flex justify-between items-center w-full py-2 text-left text-lg font-semibold">
-                            <span>What is the cost of AirSpark’s services?</span>
-                            <span
-                                  class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
-                                <i class="fas fa-arrow-right text-base text-white"></i>
-                            </span>
+                                class="faq-question text-black flex justify-between items-start w-full py-2 text-left text-lg font-semibold gap-2 md:gap-4">
+                            <span>Do you offer website maintenance services?</span>
+                            <div>
+                                <span
+                                      class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
                         </button>
                         <div
                              class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                            Our pricing varies based on the scope and complexity of each project. We provide customized
-                            quotes after understanding your specific requirements. </div>
+                            Yes, AirSpark offers ongoing website maintenance packages to ensure your site remains
+                            up-to-date, secure, and optimized. </div>
                     </div>
                     <!-- FAQ Item 4 -->
                     <div class="faq-item bg-[#F3F3F3] w-full rounded-lg p-4">
                         <button
-                                class="faq-question text-black flex justify-between items-center w-full py-2 text-left text-lg font-semibold">
-                            <span>Can AirSpark handle international projects?</span>
-                            <span
-                                  class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
-                                <i class="fas fa-arrow-right text-base text-white"></i>
-                            </span>
+                                class="faq-question text-black flex justify-between items-start w-full py-2 text-left text-lg font-semibold gap-2 md:gap-4">
+                            <span>Can you help improve our website's SEO?</span>
+                            <div>
+                                <span
+                                      class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
                         </button>
                         <div
                              class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                            Yes, we handle international projects and are experienced in working with clients across
-                            different time zones and regions. </div>
+                            Absolutely! Our team specializes in organic SEO strategies to boost your website's
+                            visibility and ranking on search engines. </div>
                     </div>
                     <!-- FAQ Item 5 -->
                     <div class="faq-item bg-[#F3F3F3] w-full rounded-lg p-4">
                         <button
-                                class="faq-question text-black flex justify-between items-center w-full py-2 text-left text-lg font-semibold">
-                            <span>What technologies does AirSpark use?</span>
-                            <span
-                                  class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
-                                <i class="fas fa-arrow-right text-base text-white"></i>
-                            </span>
+                                class="faq-question text-black flex justify-between items-start w-full py-2 text-left text-lg font-semibold gap-2 md:gap-4">
+                            <span>What platforms do you use for eCommerce development?</span>
+                            <div>
+                                <span
+                                      class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
                         </button>
                         <div
                              class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                            We use a variety of technologies including HTML, CSS, JavaScript, React, and various CMS
-                            platforms. Our choice of technology depends on the project requirements. </div>
+                            We work with leading eCommerce platforms like Shopify, WooCommerce, and Magento, tailoring
+                            solutions to fit your business needs. </div>
                     </div>
                     <!-- FAQ Item 6 -->
                     <div class="faq-item bg-[#F3F3F3] w-full rounded-lg p-4">
                         <button
-                                class="faq-question text-black flex justify-between items-center w-full py-2 text-left text-lg font-semibold">
-                            <span>Does AirSpark provide post-launch support?</span>
-                            <span
-                                  class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
-                                <i class="fas fa-arrow-right text-base text-white"></i>
-                            </span>
+                                class="faq-question text-black flex justify-between items-start w-full py-2 text-left text-lg font-semibold gap-2 md:gap-4">
+                            <span>Do you provide custom branding services?</span>
+                            <div>
+                                <span
+                                      class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
                         </button>
                         <div
                              class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                            Yes, we offer post-launch support to address any issues and ensure that your project runs
-                            smoothly after it goes live. </div>
+                            Yes, our branding services include logo design, brand strategy, visual identity, and more to
+                            ensure your brand stands out. </div>
                     </div>
                     <!-- FAQ Item 7 -->
                     <div class="faq-item bg-[#F3F3F3] w-full rounded-lg p-4">
                         <button
-                                class="faq-question text-black flex justify-between items-center w-full py-2 text-left text-lg font-semibold">
-                            <span>How can I get in touch with AirSpark?</span>
-                            <span
-                                  class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
-                                <i class="fas fa-arrow-right text-base text-white"></i>
-                            </span>
+                                class="faq-question text-black flex justify-between items-start w-full py-2 text-left text-lg font-semibold gap-2 md:gap-4">
+                            <span>How does AirSpark approach digital marketing?</span>
+                            <div>
+                                <span
+                                      class="faq-toggle-icon bg-black rounded-full w-[35px] h-[35px] flex justify-center items-center transform transition-transform -rotate-45 duration-300">
+                                    <i class="fas fa-arrow-right text-base text-white"></i>
+                                </span>
+                            </div>
                         </button>
                         <div
                              class="faq-answer max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out text-black">
-                            You can get in touch with us through our contact page on the website or by email at
-                            contact@airspark.com. We also offer consultations by appointment. </div>
+                            We adopt a holistic approach to digital marketing, combining SEO, content marketing, social
+                            media strategies, and paid advertising to maximize your online presence. </div>
                     </div>
                 </div>
             </div>
