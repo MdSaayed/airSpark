@@ -119,19 +119,60 @@
                         </li>
                     </ul>
                 </div>
-                <div class="flex">
-                    <div class="stepper">
+                <div class="flex flex-col md:flex-row items-start gap-6">
+                    <div class="stepper w-full md:w-5/12">
                         <div class="step active">
-                            <div class="step-number"> 1 </div>
+                            <div class="step-number">1</div>
                         </div>
-                        <div class="step inacitve">
-                            <div class="step-number"> 2 </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
                         </div>
-                        <div class="step inacitve">
-                            <div class="step-number"> 3 </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
                         </div>
                     </div>
-                    <div class="form">
+                    <div class="mt-12 md:mt-0 w-full md:w-7/12">
+                        <h3 class="text-black text-4xl font-normal leading-[62px]">Let’s start at the very beginning
+                        </h3>
+                        <div class="contact-form">
+                            <form class="grid grid-cols-1 md:grid-cols-2 gap-4"
+                                  action="submit_form.php"
+                                  method="POST">
+                                <input type="text"
+                                       name="full_name"
+                                       class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-black"
+                                       placeholder="Full name"
+                                       required="">
+                                <input type="email"
+                                       name="email"
+                                       class="p-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-black"
+                                       placeholder="Email address"
+                                       required="">
+                                <input type="tel"
+                                       name="phone"
+                                       class="p-4 border border-gray-300 rounded-lg md:col-span-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-black"
+                                       placeholder="Phone (Optional)">
+                                <textarea name="project_details"
+                                          class="p-4 border border-gray-300 rounded-lg md:col-span-2 focus:outline-none focus:ring-2 focus:ring-primary placeholder:text-black"
+                                          rows="5"
+                                          placeholder="Tell us about your project"
+                                          required=""></textarea>
+                                <div
+                                     class="md:col-span-2 flex flex-col lg:flex-row gap-6 justify-between lg:items-center flex-wrap mt-4">
+                                    <p class="text-lg text-black max-w-[400px]"> By submitting this form I accept the <a
+                                           href="#"
+                                           class="underline">Privacy Policy</a> of this site. </p>
+                                    <div class="banner-btn flex gap-4 inline-flex">
+                                        <div class="flex font-primary text-base">
+                                            <button type="submit"
+                                                    class="nav-button btn bg-black text-white">Send message</button>
+                                            <i
+                                               class="fas fa-arrow-right bg-black text-white h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
