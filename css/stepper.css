@@ -34,8 +34,8 @@
 }
 
 .step .step-number {
-    background-color: #DADADA !important;
-    color: black !important;
+    background-color: #010202 !important;
+    color: #FFF !important;
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -47,6 +47,7 @@
 }
 
 .step.active .step-number {
+    color: #010202 !important;
     background-color: #D1FC71 !important;
 }
 
@@ -74,13 +75,16 @@
     .step:not(:last-child)::after {
         content: '';
         position: absolute;
-        width: 100%; /* Fills the entire space between steps */
+        width: 100%;
+        /* Fills the entire space between steps */
         height: 2px;
         top: 50%;
         left: 100%;
-        transform: translateX(-50%); /* Starts from the middle of the current step */
+        transform: translateX(-50%);
+        /* Starts from the middle of the current step */
         background-color: #DADADA;
-        z-index: -1; /* Keeps the line behind the step circle */
+        z-index: -1;
+        /* Keeps the line behind the step circle */
     }
 
     .step.active:not(:last-child)::after {
@@ -92,11 +96,13 @@
         width: 50px;
         font-size: 20px;
         background-color: inherit;
-        z-index: 1; /* Ensures step number is above the line */
+        z-index: 1;
+        /* Ensures step number is above the line */
     }
 }
+
 @media (max-width: 400px) {
-     .step .step-number {
+    .step .step-number {
         height: 40px;
         width: 40px;
         font-size: 16px;

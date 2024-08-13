@@ -1,35 +1,49 @@
-// JavaScript to manage active step
-const steps = document.querySelectorAll('.stepper-item');
-const stepLines = document.querySelectorAll('.step-line');
+document.addEventListener('DOMContentLoaded', function () {
+    const steps = document.querySelectorAll('.step');
+    const forms = document.querySelectorAll('.w-full.md\\:w-7\\/12');
+    const nextButtons = document.querySelectorAll('.form-btn.btn');
+    const backButtons = document.querySelectorAll('.form-btn.btn-white');
 
-// Function to set active step
-function setActiveStep(index) {
-    steps.forEach((step, i) => {
-        if (i === index) {
-            step.classList.add('z-30');
-            step.classList.remove('z-20');
-        } else {
-            step.classList.add('z-20');
-            step.classList.remove('z-30');
-        }
+    let currentStep = 0;
+
+    function setActiveStep(index) {
+        // Update active step in the stepper
+        steps.forEach((step, i) => {
+            if (i <= index) {
+                step.classList.add('active');
+            } else {
+                step.classList.remove('active');
+            }
+        });
+
+        // Show the correct form and hide the others
+        forms.forEach((form, i) => {
+            form.classList.toggle('hidden', i !== index);
+        });
+
+        currentStep = index;
+    }
+
+    // Add event listeners to next buttons
+    nextButtons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent form submission for demonstration
+            if (currentStep < steps.length - 1) {
+                setActiveStep(currentStep + 1);
+            }
+        });
     });
 
-    stepLines.forEach((line, i) => {
-        if (i === index) {
-            line.classList.add('bg-[#D1FC71]');
-            line.classList.remove('bg-[#DADADA]');
-            line.classList.add('z-20');
-            line.classList.remove('z-10');
-        } else {
-            line.classList.add('bg-[#DADADA]');
-            line.classList.remove('bg-[#D1FC71]');
-            line.classList.add('z-10');
-            line.classList.remove('z-20');
-        }
+    // Add event listeners to back buttons
+    backButtons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent form submission for demonstration
+            if (currentStep > 0) {
+                setActiveStep(currentStep - 1);
+            }
+        });
     });
-}
 
-// Example: Set the first step as active
-setActiveStep(0);
-
-console.log(steps);
+    // Initialize the first step as active
+    setActiveStep(0);
+});
