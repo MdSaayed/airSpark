@@ -1,0 +1,30 @@
+.marquee-right-to-left {
+    white-space: nowrap;
+    animation: marqueeRTL 10s linear infinite;
+}
+
+.marquee-left-to-right {
+    white-space: nowrap;
+    animation: marqueeLTR 10s linear infinite;
+    animation-delay: 400ms; /* 400ms delay for the second text */
+}
+
+@keyframes marqueeRTL {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marqueeLTR {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
