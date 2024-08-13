@@ -54,32 +54,31 @@
 
 /* input down arrow change */
 select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;  
-  background-image: url('/asset/icons/down-arrow.svg'); /* Replace with your arrow image */
-  background-repeat: no-repeat;
-  background-position: right 10px center; /* Position of the arrow */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('/asset/icons/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
 }
 
 select::-ms-expand {
-  display: none; /* Hide the default arrow in IE */
+    display: none;
 }
 
 
 input[type="date"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  
-  /* Keep the input styling intact, only change the icon */
-  background-image: url('/asset/icons/calender.svg'); /* Replace with your custom icon */
-  background-repeat: no-repeat;
-  background-position: right 10px center; /* Adjust the icon position */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('/asset/icons/calender.svg');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
-  opacity: 0; /* Hide the default calendar icon */
+    display: none;
 }
 
 
