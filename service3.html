@@ -1,0 +1,500 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- swiper css -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- theme css -->
+    <link rel="stylesheet"
+          href="./css/style.css">
+    <link rel="stylesheet"
+          href="./css/slider.css">
+    <link rel="stylesheet"
+          href="./css/work.css">
+</head>
+<body>
+    <!-- header start -->
+    <header id="header-area relative"
+            class="text-primary-color">
+        <div class="container py-3 flex items-center justify-between  h-[90px]">
+            <!-- Logo -->
+            <div>
+                <a href="index.html">
+                    <img src="./asset/image/logo/Logo.png"
+                         alt="Logo">
+                </a>
+            </div>
+            <!-- Navigation Menu -->
+            <nav class="hidden md:hidden lg:flex flex-grow items-center justify-center">
+                <ul class="menu flex gap-8">
+                    <li class="menu-item leading-6"><a class="index.html"
+                           href="index.html">Home1</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="home2.html">Home2</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="home3.html">Home3</a></li>
+                    <li class="menu-item current-menu-item leading-6"><a class="link"
+                           href="#">Services <span
+                                  class="button-bg-primary px-[8px] text-[14px] font-medium ml-[4px] rounded-full ">12</span></a>
+                    </li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="work.html">Work</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="#">About</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="#">Blog</a></li>
+                    <li class="menu-item leading-6"><a class="link"
+                           href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hidden md:hidden lg:flex font-primary">
+                <button class="nav-button button-bg-primary px-4 h-[42px] rounded-full flex items-center"> Start a
+                    project </button>
+                <i
+                   class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button"
+                    class="lg:hidden px-2 py-1 border border-gray-600 rounded">
+                <svg class="w-6 h-6"
+                     fill="none"
+                     stroke="currentColor"
+                     viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+             class=" container mx-auto py-2 absolute left-0 w-full bg-gray-800 text-white hidden z-20 ">
+            <div class="">
+                <a href="#"
+                   class="block py-2 hover:text-gray-400">Home1</a>
+                <a href="home2.html"
+                   class="block py-2 hover:text-gray-400">Home2</a>
+                <a href="#"
+                   class="block py-2 hover:text-gray-400">About</a>
+                <a href="#"
+                   class="block py-2 hover:text-gray-400">Services</a>
+                <a href="#"
+                   class="block py-2 hover:text-gray-400">Contact</a>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- banner start -->
+    <section id="banner">
+        <div class="container p-0 lg:max-h-[720px]">
+            <div class="banner-content grid grid-cols-1 md:grid-cols-2 items-center items-stretch">
+                <div class="col-1 flex items-stretch">
+                    <img class="w-full h-full object-cover rounded-tr-lg"
+                         src="./asset/image/banner/banner3.png"
+                         alt="">
+                </div>
+                <div
+                     class="section-heading-area pb-0 flex gap-6 md:gap-10 lg:gap-x-10 gap-y-6 items-start flex-wrap md:flex-wrap lg:flex-nowrap items-stretch">
+                    <div class="flex flex-col gap-10 justify-center custom-padding lg:p-12">
+                        <ul class="list list-disc ml-4 flex">
+                            <li class="">
+                                <span class="flex flex-col md:flex-row gap-4 items-start md:items-center">
+                                    <span class="font-medium text-primary mr-4">Services </span>
+                                    <span class="text-black text-5xl font-medium leading-snug -ml-[15px] block">We’re
+                                        a</span>
+                                </span>
+                                <span class="text-black text-5xl font-medium leading-snug -ml-[15px] block">digital
+                                    marketing agency with expertise</span>
+                            </li>
+                        </ul>
+                        <p class="text-lg text-black">With media being of utmost importance, we paired these snippets of
+                            Gary's life with a classic yet contemporary typeface that aims to add a level of
+                            sophistication to the brand.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner end -->
+    <!-- our experience start -->
+    <section id="our-experience">
+        <div class="container p-0">
+            <div class="our-experience-area grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center">
+                <div class="col-1 order-1 md:order-1 custom-padding">
+                    <h3 class="text-6xl md:text-6xl	lg:text-8xl text-black leading-snugfont-medium">Design</h3>
+                    <p class="text-3xl text-black font-medium mt-8">Brand designers and web designers in-house crafting
+                        visuals to match your brand values.</p>
+                </div>
+                <div class="col-2 order-2 md:order-2 bg-black experience-links">
+                    <!-- link -->
+                    <div
+                         class="group flex justify-center items-center border-b border-[#999A9A] p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">01</span>
+                            <span class="text-black text-lg text-white">Brand Identity</span>
+                        </div>
+                    </div>
+                    <!-- link -->
+                    <div
+                         class="group flex justify-center items-center border-b border-[#999A9A] p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">02</span>
+                            <span class="text-black text-lg text-white">Web Design</span>
+                        </div>
+                    </div>
+                    <!-- link -->
+                    <div
+                         class="group flex justify-center items-center border-b border-[#999A9A] p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">03</span>
+                            <span class="text-black text-lg text-white">eCommerce</span>
+                        </div>
+                    </div>
+                    <!-- link -->
+                    <div class="group flex justify-center items-center p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">04</span>
+                            <span class="text-black text-lg text-white">Graphic Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 order-4 md:order-3 bg-black experience-links">
+                    <!-- link -->
+                    <div
+                         class="group flex justify-center items-center border-b border-[#999A9A] p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">01</span>
+                            <span class="text-black text-lg text-white">Web Development</span>
+                        </div>
+                    </div>
+                    <!-- link -->
+                    <div
+                         class="group flex justify-center items-center border-b border-[#999A9A] p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">02</span>
+                            <span class="text-black text-lg text-white">Craft CMS</span>
+                        </div>
+                    </div>
+                    <!-- link -->
+                    <div
+                         class="group flex justify-center items-center border-b border-[#999A9A] p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">03</span>
+                            <span class="text-black text-lg text-white">Shopify</span>
+                        </div>
+                    </div>
+                    <!-- link -->
+                    <div class="group flex justify-center items-center p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">04</span>
+                            <span class="text-black text-lg text-white">Webflow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 order-3 md:order-4 custom-padding">
+                    <h3 class="text-6xl md:text-6xl	lg:text-8xl text-black leading-snugfont-medium">Develop</h3>
+                    <p class="text-3xl text-black font-medium mt-8">Web development to the highest standards, and
+                        matching the latest industry requirements.</p>
+                </div>
+                <div class="col-5 order-5 md:order-5 custom-padding">
+                    <h3 class="text-6xl md:text-6xl	lg:text-8xl text-black leading-snugfont-medium">Support</h3>
+                    <p class="text-3xl text-black font-medium mt-8">BLean on our in-house team to support with your
+                        design, development and seo needs.</p>
+                </div>
+                <div class="col-6 order-6 md:order-6 bg-black experience-links">
+                    <!-- link -->
+                    <div
+                         class="group flex justify-center items-center border-b border-[#999A9A] p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">01</span>
+                            <span class="text-black text-lg text-white">SEO</span>
+                        </div>
+                    </div>
+                    <!-- link -->
+                    <div
+                         class="group flex justify-center items-center border-b border-[#999A9A] p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">02</span>
+                            <span class="text-black text-lg text-white">Web Hosting</span>
+                        </div>
+                    </div>
+                    <!-- link -->
+                    <div
+                         class="group flex justify-center items-center border-b border-[#999A9A] p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">03</span>
+                            <span class="text-black text-lg text-white">Content Writing</span>
+                        </div>
+                    </div>
+                    <!-- link -->
+                    <div class="group flex justify-center items-center p-8 duration-300 relative">
+                        <i
+                           class="fas fa-arrow-right button-bg-primary h-[40px] w-[40px] -mt-4 flex justify-center items-center -ml-3 rounded-full rotate-icon opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute top-1/2 left-10"></i>
+                        <div class="flex flex-col items-center gap-4">
+                            <span class="text-[#999A9A] text-lg">04</span>
+                            <span class="text-black text-lg text-white">PPC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our experience end -->
+    <!-- blog start  -->
+    <section id="blog">
+        <div class="container">
+            <!-- blogs card -->
+            <div class="blogs flex flex-col gap-8">
+                <div class="blog-cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-y-16 md:gap-x-6">
+                    <div class="card">
+                        <div class="img-box rounded-3xl">
+                            <img class="w-full"
+                                 src="./asset/image/blog/blog5.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content mt-4">
+                            <div class="flex gap-4 text-primary">
+                                <ul class="list list-disc  ml-4">
+                                    <li class="text-black">6 min read</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="text-black text-2xl font-medium mt-2">Transform Your Brand: Why Web Design
+                                    Matters More Than Ever</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-box rounded-3xl">
+                            <img class="w-full"
+                                 src="./asset/image/blog/blog6.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content mt-4">
+                            <div class="flex gap-4 text-primary">
+                                <ul class="list list-disc ml-4">
+                                    <li class="text-black">6 min read</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="text-black text-2xl font-medium mt-2">The Future of Web Design: Trends to
+                                    Watch in 2024</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="img-box rounded-3xl">
+                            <img class="w-full"
+                                 src="./asset/image/blog/blog7.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content mt-4">
+                            <div class="flex gap-4 text-primary">
+                                <ul class="list list-disc ml-4">
+                                    <li class="text-black">6 min read</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="text-black text-2xl font-medium mt-2">Transform Your Brand: Why Web Design
+                                    Matters More Than Ever</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="section-heading-area py-16">
+                        <!-- Content for the first column -->
+                        <div>
+                            <ul class="list list-disc ml-4">
+                                <li>
+                                    <span class="font-medium text-primary">Blog</span>
+                                </li>
+                            </ul>
+                            <h2 class="text-black text-5xl font-normal mt-6 leading-[62px]">The latest from our</br>
+                                design studio</h2>
+                        </div>
+                        <!-- button -->
+                        <div class="banner-btn py-4 flex gap-4 inline-flex mt-4">
+                            <div class="flex font-primary text-base">
+                                <button class="nav-button btn">View the blog</button>
+                                <i
+                                   class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon text-black"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hidden on mobile and visible on larger screens -->
+                    <div class="hidden lg:block"></div>
+                    <div class="card">
+                        <div class="img-box rounded-3xl">
+                            <img class="w-full"
+                                 src="./asset/image/blog/blog8.png"
+                                 alt="">
+                        </div>
+                        <div class="card-content mt-4">
+                            <div class="flex gap-4 text-primary">
+                                <ul class="list list-disc ml-4">
+                                    <li class="text-black">6 min read</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h2 class="text-black text-2xl font-medium mt-2">Transform Your Brand: Why Web Design
+                                    Matters More Than Ever</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog end -->
+    <!-- footer start -->
+    <footer id="footer"
+            class="bg-[#010202]">
+        <div class="container pb-8 relative">
+            <div class="footer-links grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                <div class="col-1">
+                    <h3 class="text-[#999A9A] leading-6 mb-4">Index</h3>
+                    <ul>
+                        <li class="text-white text-base mb-3"><a href="">Home V1</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Home V2</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Home V3</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Work</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Work Single (CMS)</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Start a project</a></li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <h3 class="text-[#999A9A] leading-6 mb-4">Services</h3>
+                    <ul>
+                        <li class="text-white text-base mb-3"><a href="">Services V1</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Services V2</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Services V3</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Services Single (CMS)</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3 class="text-[#999A9A] leading-6 mb-4">Blog</h3>
+                    <ul>
+                        <li class="text-white text-base mb-3"><a href="">Blog V1</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Blog V2</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Blog V3</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Blog Single (CMS)</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3 class="text-[#999A9A] leading-6 mb-4">About</h3>
+                    <ul>
+                        <li class="text-white text-base mb-3"><a href="">About us</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Meet the team</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Culture</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Testimonials</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Careers</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Careers Single (CMS)</a></li>
+                    </ul>
+                </div>
+                <div class="col-5">
+                    <h3 class="text-[#999A9A] leading-6 mb-4">Utility</h3>
+                    <ul>
+                        <li class="text-white text-base mb-3"><a href="">Start here</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Password protection</a></li>
+                        <li class="text-white text-base mb-3"><a href="">404 not found</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Licences</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Privacy Policy</a></li>
+                        <li class="text-white text-base mb-3"><a href="">Terms of Services</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row md:justify-between pt-16">
+                <div class="flex flex-col gap-4">
+                    <h2 class="text-white text-4xl font-normal leading-snug">Do you like</br> what you see?</h2>
+                    <!-- buttons -->
+                    <div class="banner-btn py-4 flex gap-4 inline-flex">
+                        <div class=" flex font-primary text-base">
+                            <button class="nav-button btn">Start a project</button>
+                            <i
+                               class="fas fa-arrow-right button-bg-primary h-[42px] w-[42px] flex justify-center items-center -ml-3 rounded-full rotate-icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-6xl md:text-6xl	lg:text-8xl text-white leading-snug font-medium text-end">Crafting
+                        </br> since 2012</h3>
+                </div>
+            </div>
+            <div
+                 class="copyright-text flex flex-col lg:flex-row gap-4 md:gap-0 lg:gap-0 justify-between items-center mt-12">
+                <div class="logo">
+                    <img src="./asset/image/logo/logo-white.png"
+                         alt="">
+                </div>
+                <div>
+                    <p class="text-[#999A9A] text-[14px] text-center">© 2024 Created by Airdokan & Powerd by Webflow.
+                        All rights reserved. </p>
+                </div>
+            </div>
+            <!-- social links -->
+            <div class="social-links flex flex-col gap-2 bg-white rounded-l-lg p-4 absolute -top-4 -right-[1px]">
+                <div class="button-bg-primary rounded-full p-1 w-[40px] h-[40px] flex justify-center items-center">
+                    <i class="fa-brands fa-facebook text-[18px]"></i>
+                </div>
+                <div class="button-bg-primary rounded-full p-1 w-[40px] h-[40px] flex justify-center items-center">
+                    <i class="fa-brands fa-linkedin text-[18px]"></i>
+                </div>
+                <div class="button-bg-primary rounded-full p-1 w-[40px] h-[40px] flex justify-center items-center">
+                    <i class="fa-brands fa-twitter text-[18px]"></i>
+                </div>
+                <div class="button-bg-primary rounded-full p-1 w-[40px] h-[40px] flex justify-center items-center">
+                    <i class="fa-brands fa-github text-[18px]"></i>
+                </div>
+                <div class="button-bg-primary rounded-full p-1 w-[40px] h-[40px] flex justify-center items-center">
+                    <i class="fa-brands fa-behance text-[18px]"></i>
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 bg-white rounded-br-lg p-4 absolute -top-4 left-0">
+                <div">
+                    <p class="text-lg font-semibold	">Take me up again 👆</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+</html>
