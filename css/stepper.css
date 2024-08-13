@@ -52,6 +52,38 @@
 }
 
 
+/* input down arrow change */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;  
+  background-image: url('/asset/icons/down-arrow.svg'); /* Replace with your arrow image */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Position of the arrow */
+}
+
+select::-ms-expand {
+  display: none; /* Hide the default arrow in IE */
+}
+
+
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  /* Keep the input styling intact, only change the icon */
+  background-image: url('/asset/icons/calender.svg'); /* Replace with your custom icon */
+  background-repeat: no-repeat;
+  background-position: right 10px center; /* Adjust the icon position */
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0; /* Hide the default calendar icon */
+}
+
+
+
 
 
 /* Horizontal stepper for devices with max width 786px */
