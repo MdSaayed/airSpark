@@ -95,3 +95,10 @@
         z-index: 1; /* Ensures step number is above the line */
     }
 }
+@media (max-width: 400px) {
+     .step .step-number {
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+    }
+}
