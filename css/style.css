@@ -147,6 +147,18 @@
     cursor: pointer;
 }
 
+.text-transparent {
+-webkit-text-stroke: 1px #DADADA; 
+  color: transparent;
+  background: linear-gradient(45deg, #DADADA, transparent); /* Gradient background */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+}
+
+
+
+
 
 /* Media queries for responsive design */
 @media (max-width: 1024px) {
@@ -261,6 +273,7 @@
 
 
 @media (max-width: 394px) {
+
     .btn,
     .btn-white {
         font-size: 12px;
