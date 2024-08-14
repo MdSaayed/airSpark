@@ -1,30 +1,65 @@
-.marquee-right-to-left {
+/* Define the marquee speed as a custom property (CSS variable) */
+:root {
+    --marquee-speed: 15s; /* Speed for the first animation */
+    --marquee-speed-2: 15s; /* Speed for the second animation */
+}
+
+/* Container styles */
+.animated-text-container {
+    overflow: hidden;
+}
+
+/* First animation (scrolls right to left) */
+.scrolling-text-inner-right-left{
+    display: flex;
     white-space: nowrap;
-    animation: marqueeRTL 10s linear infinite;
+    padding: 8px 0;
+    animation: scroll-left var(--marquee-speed) linear infinite;
 }
 
-.marquee-left-to-right {
+/* Second animation (scrolls left to right) */
+.scrolling-text-inner-left-right {
+    display: flex;
     white-space: nowrap;
-    animation: marqueeLTR 10s linear infinite;
-    animation-delay: 400ms; /* 400ms delay for the second text */
+    padding: 8px 0;
+    animation: scroll-right var(--marquee-speed-2) linear infinite;
 }
 
-@keyframes marqueeRTL {
-    0% {
-        transform: translateX(100%);
-    }
+/* Text styles */
+.scrolling-text {
+    display: flex;
+}
 
+/* Ensure no gap between the items */
+.scrolling-text-item {
+    flex-shrink: 0;
+    padding: 0 30px;
+}
+
+/* Pause the animation when a user hovers over it */
+.animated-text-container:hover .scrolling-text-inner-right-left,
+.animated-text-container:hover .scrolling-text-inner-left-right {
+    animation-play-state: paused;
+}
+
+/* Setting the Animation using Keyframes */
+
+/* First animation keyframes (right to left) */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-200%);
     }
 }
 
-@keyframes marqueeLTR {
+/* Second animation keyframes (left to right) */
+@keyframes scroll-right {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-200%);
     }
-
     100% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 }
