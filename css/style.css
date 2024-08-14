@@ -148,12 +148,11 @@
 }
 
 .text-transparent {
--webkit-text-stroke: 1px #DADADA; 
-  color: transparent;
-  background: linear-gradient(45deg, #DADADA, transparent); /* Gradient background */
-  -webkit-background-clip: text;
-  background-clip: text;
-  
+  -webkit-text-stroke: 1px #dadadaa1; /* Light gray stroke with slight opacity */
+  color: transparent; /* Makes the text itself invisible */
+  background: linear-gradient(45deg, #DADADA, transparent); /* Gradient from top-left to transparent */
+  -webkit-background-clip: text; /* Clips the gradient to the text */
+  background-clip: text; /* Standard property for background clipping */
 }
 
 
